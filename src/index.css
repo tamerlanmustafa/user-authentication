@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
     margin: 0;
@@ -6,8 +6,15 @@
     box-sizing: border-box;
 }
 
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 html {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     color: #fff;
     height: 100%;
@@ -16,7 +23,7 @@ html {
 
 body {
     /* min-height: 100vh; */
-    background-color: dodgerblue;
+    background-color: #191D88;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,12 +47,18 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1rem;
-    background-color: rgba(0,0,0,0.4);
+    padding: 5rem 3rem;
+    background-color: #337CCF;
+    border-radius: 10px;
+}
+
+h1 {
+    align-self: center;
 }
 
 form {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
     flex-grow: 1;
@@ -63,12 +76,16 @@ textarea {
   font-family: 'Nunito', sans-serif;
   font-size: 22px;
   padding: 0.25rem;
+  margin-top: 3px;
   border-radius: 0.5rem;
+  border: #FFC436;
 }
 
 label,
 button {
+    cursor: pointer;
   margin-top: 1rem;
+  font-size: 0.875rem;
 }
 
 button {
@@ -82,15 +99,17 @@ button {
     color: #fff;
     padding: 0.25rem;
     position: relative;
-    bottom: -10px;
+    top: 5px;
 }
+
+
 
 .instructions > svg {
     margin-right: 0.25rem;
 }
 
 .offscreen {
-    position: absolute;
+    position: absolute; 
     left: -9999px;
 }
 

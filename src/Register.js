@@ -90,6 +90,7 @@ const Register = () => {
     }
 
 
+
     return (
       <>
             {success ? (
@@ -106,7 +107,7 @@ const Register = () => {
                     <form onSubmit={handleSubmit}>
                         {/*  USERNAME */}
                         <label htmlFor='username'>
-                            Username:
+                            Username :
                             <span className={validName ? "valid" : "hide"}>
                                 <i className="fa-solid fa-check"></i>
                             </span>
@@ -135,7 +136,7 @@ const Register = () => {
                         </p>
                             {/* PASSWORD */}
                         <label htmlFor="password">
-                            Password:
+                            Password :
                             <i className={validPwd ? "fa-solid fa-check valid" : "hide"} />
                             <i className={validPwd || !pwd ? "hide" : "invalid fa-solid fa-x"} />
                         </label>
@@ -158,7 +159,7 @@ const Register = () => {
                         </p>
                         {/* CONFIRM PASSWORD */}
                         <label htmlFor="confirm_pwd">
-                            Confirm Password:
+                            Confirm Password :
                             <i className={validMatch && matchPwd ? "valid fa-solid fa-check" : "hide"} />
                             <i className={validMatch || !matchPwd ? "hide" : "invalid fa-solid fa-x"} />
                         </label>
